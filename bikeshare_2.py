@@ -276,8 +276,8 @@ def user_stats(df):
 
 def display_data(df):
     #creating and initializing the variables
-    start = 0
-    stop = 5
+    starting_position = 0
+    stopping_position = 5
     td = ['yes', 'no']
 
     while True:
@@ -291,9 +291,9 @@ def display_data(df):
         else:
             if trip_data == 'yes':
                 #printing 5 records of data
-                print(df.iloc[start : stop])
-                start = stop
-                stop += 5
+                print(df.iloc[starting_position : stopping_position])
+                starting_position = stopping_position
+                stopping_position += 5
                 continue
             else:
                 break
