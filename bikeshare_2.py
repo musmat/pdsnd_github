@@ -22,7 +22,7 @@ def get_filters():
     # get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
     while True:
         city = input('Would you like to see data from Chicago, New York or Washington? : ').lower()
-        if  city.lower() not in CITY_DATA:
+        if  city not in CITY_DATA:
             print('Incorrect input, please enter the city as they are shown')
             continue
         else:
@@ -33,13 +33,13 @@ def get_filters():
 
     while True:
         time_filter = input('Do you want to filter by month, day, both or not at all(Enter none)? : ').lower()
-        if time_filter.lower() not in tf:
+        if time_filter not in tf:
             print('Incorrect input, please type as stated')
             continue
         else:
             break
 
-    if time_filter.lower() == 'month':
+    if time_filter == 'month':
         day = "all"
         months = [
                   'january', 'february', 'march', 'april',
@@ -48,13 +48,13 @@ def get_filters():
 
         while True:
             month = input('which month? january, february, march, april, may, june : ').lower()
-            if month.lower() not in months:
+            if month not in months:
                 print('Incorrect input, please type the months as shown')
                 continue
             else:
                 break
 
-    elif time_filter.lower() == 'day':
+    elif time_filter == 'day':
         month = "all"
         days = [
                 'monday', 'tuesday', 'wednesday', 'thursday', 'friday',
@@ -63,13 +63,13 @@ def get_filters():
 
         while True:
             day = input('Which day? monday, tuesday, wednesday, thursday, friday, saturday, sunday : ').lower()
-            if day.lower() not in days:
+            if day not in days:
                 print('Incorrect input, please type as listed')
                 continue
             else:
                 break
 
-    elif time_filter.lower() == 'both':
+    elif time_filter == 'both':
         months = [
                   'january', 'february', 'march', 'april',
                   'may', 'june'
@@ -77,7 +77,7 @@ def get_filters():
 
         while True:
             month = input('which month? january, february, march, april, may, june : ')
-            if month.lower() not in months:
+            if month not in months:
                 print('Incorrect input, please type the months as shown')
                 continue
             else:
@@ -91,13 +91,13 @@ def get_filters():
 
         while True:
             day = input('Which day? monday, tuesday, wednesday, thursday, friday, saturday, sunday : ')
-            if day.lower() not in days:
+            if day not in days:
                 print('Incorrect input, please type as listed')
                 continue
             else:
                 break
 
-    elif time_filter.lower() == 'none':
+    elif time_filter == 'none':
         month = "all"
         day = "all"
 
