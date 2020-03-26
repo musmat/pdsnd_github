@@ -3,9 +3,11 @@ import datetime
 import pandas as pd
 import numpy as np
 
-CITY_DATA = { 'chicago': 'chicago.csv',
+CITY_DATA = {
+              'chicago': 'chicago.csv',
               'new york city': 'new_york_city.csv',
-              'washington': 'washington.csv' }
+              'washington': 'washington.csv'
+            }
 
 def get_filters():
     """
@@ -40,7 +42,8 @@ def get_filters():
     if time_filter.lower() == 'month':
         day = "all"
         months = [
-                  'january', 'february', 'march', 'april', 'may', 'june'
+                  'january', 'february', 'march', 'april',
+                  'may', 'june'
                  ]
 
         while True:
@@ -68,7 +71,8 @@ def get_filters():
 
     elif time_filter.lower() == 'both':
         months = [
-                  'january', 'february', 'march', 'april', 'may', 'june'
+                  'january', 'february', 'march', 'april',
+                  'may', 'june'
                  ]
 
         while True:
