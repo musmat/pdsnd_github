@@ -176,9 +176,10 @@ def time_stats(df):
     # find the most popular hour
     popular_hour = df['hour'].mode()[0]
 
+    #print the most popular hour
     print('Most Popular Start Hour:', popular_hour)
 
-
+    #print the amount of time taken to compute the output
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
 
@@ -270,17 +271,22 @@ def user_stats(df):
 
 
 def display_data(df):
+    #creating and initializing the variables
     start = 0
     stop = 5
     td = ['yes', 'no']
 
     while True:
+        #Checking if user want to see raw data
         trip_data = input('Do you want to view trip data? answer \'yes\' or \'no\' : ').lower()
+
+        #validating users input
         if trip_data not in td:
             print('please type \'yes\' if you want or \'no\' if you don\'t : ')
             continue
         else:
             if trip_data == 'yes':
+                #printing 5 records of data
                 print(df.iloc[start : stop])
                 start = stop
                 stop += 5

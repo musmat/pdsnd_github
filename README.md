@@ -15,7 +15,8 @@ the system will output the discriptive statistics of
 1.	common departure and destination station with its counts
 2.	common station combinations 
 3.	average travel time
-4.	show the row data
+4.	print most popular hour where bikes are rented most
+5.	show the row data
 
 ### Files used
 The application retrieve data from csv files namely, chicago.csv,
