@@ -1,15 +1,25 @@
 ### Date created
-Include the date you created this project and README file.
+21/02/2020
 
 ### Project Title
-Replace the Project Title
+Bikeshare
 
 ### Description
-Describe what your project is about and what it does
+Bikeshare is an interactive text base application to produce descriptive 
+statistics to the user on the rending of bikes in USA big cities
+(Chicago, Washington and New York City).
+
+The project will allow a user to provide the city which they want to view
+the statistics from, month and day. After providing all these information
+the system will output the discriptive statistics of
+1.	common departure and destination station with its counts
+2.	common station combinations 
+3.	average travel time
+4.	show the row data
 
 ### Files used
-Include the files used
+The application retrieve data from csv files namely, chicago.csv,
+washington.csv, new_york_city.csv
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
 
